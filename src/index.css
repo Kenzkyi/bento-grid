@@ -29,6 +29,16 @@
   @media screen and (max-width:1024px) {
     width: 95%;
   }
+
+  @media screen and (max-width:768px) {
+    width: 60%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+
+  @media screen and (max-width:480px) {
+    width: 95%;
+  }
 }
 
 .app-createPost{
@@ -44,7 +54,7 @@
   justify-content: center;
 
   h3{
-    font-size: 27px;
+    font-size: 30px;
     line-height: 25px;
     letter-spacing: -2px;
     font-weight: 600;
@@ -58,13 +68,24 @@
   nav{
     width: 100%;
     height: 80px;
-    /* background-color: aqua; */
 
     img{
       height: 80px;
       width: 170px;
       object-fit: cover;
     }
+  }
+
+  @media screen and (max-width:768px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 8;
+    grid-row-start: 7;
+    max-width: 100%;
+    height: 180px;
+    padding: 30px;
+    justify-content: center;
+
   }
 }
 
@@ -96,6 +117,17 @@
       width: 100%;
       object-fit: contain;
     }
+  }
+
+  @media screen and (max-width:768px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 9;
+    grid-row-start: 8;
+    max-width: 100%;
+    min-height: 220px;
+    gap: 15px;
+
   }
 }
 
@@ -154,6 +186,22 @@
       font-size: 13px;
     }
   }
+
+  @media screen and (max-width:768px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+    grid-row-start: 1;
+    height: 200px;
+
+    h2{
+      font-size: 35px;
+    }
+
+    footer{
+      width: 80%;
+    }
+  }
 }
 
 .app-ManageMultiple{
@@ -190,6 +238,38 @@
     line-height: 27px;
     letter-spacing: -1px;
     font-weight: 500;
+  }
+
+  @media screen and (max-width:768px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 3;
+    grid-row-start: 2;
+    max-width: 100%;
+    height: 180px;
+    padding: 25px;
+
+    nav{
+      height: 70px;
+      width: 100%;
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+  }
+
+  @media screen and (max-width:480px) {
+    nav{
+      img{
+        object-fit: contain;
+      }
+    }
+    h3{
+      font-size: 25px;
+    }
   }
 }
 
@@ -228,6 +308,27 @@
     }
   }
 
+  @media screen and (max-width:768px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 4;
+    grid-row-start: 3;
+    height: 180px;
+    justify-content: start;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+
+    nav{
+      height: 90px;
+      width: 70%;
+
+      img{
+        height: 140px;
+      }
+    }
+
+  }
 }
 
 .app-fasterAudience{
@@ -260,6 +361,15 @@
     }
   }
 
+  @media screen and (max-width:768px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 7;
+    grid-row-start: 6;
+    max-width: 100%;
+    height: 180px;
+
+  }
 }
 
 .app-schedule{
@@ -299,6 +409,25 @@
     font-weight: 500;
     line-height: 18px;
   }
+
+  @media screen and (max-width:768px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 5;
+    grid-row-start: 4;
+    max-width: 100%;
+    height: 450px;
+    padding-right: 25px;
+
+    nav{
+      height: 270px;
+
+      img{
+        object-fit: contain;
+      }
+    }
+
+  }
 }
 
 .app-growFollwers{
@@ -331,5 +460,32 @@
     font-weight: 500;
     line-height: 30px;
     width: 48%;
+  }
+
+  @media screen and (max-width:768px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 6;
+    grid-row-start: 5;
+    max-width: 100%;
+    height: 180px;
+
+  }
+
+  @media screen and (max-width:480px) {
+    flex-direction: column;
+    height: 270px;
+    gap: 10px;
+
+    nav{
+      width: 100%;
+      height: 55%;
+    }
+
+    h4{
+      height: 40%;
+      width: 90%;
+      text-align: center;
+    }
   }
 }
